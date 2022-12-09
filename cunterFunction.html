@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="cunt"></h1>
+    <button onClick="sumFunction()">+</button><br>
+    <script>
+        var data = 0;
+        document.getElementById("cunt").innerHTML = data;
+
+        function sumFunction(){
+            data = data + 1
+            document.getElementById("cunt").innerHTML = data;
+        }
+
+        var prom = new Promise(function(resolve, reject){
+            var arr = [1,2,3,4,5];
+                resolve(arr); 
+        });
+        prom.then((result) => document.write(result)).catch((error) => document.write(error))
+
+    </script>
+</body>
+</html>

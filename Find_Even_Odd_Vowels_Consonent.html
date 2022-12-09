@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function odd(){
+    var arr = [2,6,8,3,5,7, 'a','b','e','u','y','z', 'i','o',8,8];
+    for(var i=1; i<arr.length; i++){
+        if(arr[i]%2 ==0){
+            console.log("even is : "+arr[i]);
+        }
+        else if(arr[i]%2 == 1){
+            console.log("odd is : "+ arr[i]);
+        }
+     else if((arr[i] =='a') || (arr[i] =='i') ||(arr[i] =='o') ||(arr[i] =='e') ||(arr[i] =='u'))   {
+         console.log("vowels is :" + arr[i]);
+     }
+     else{
+         console.log("consonent is :" + arr[i]);
+     }
+    }
+}
+odd();
+    </script>
+</body>
+</html>
